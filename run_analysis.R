@@ -93,4 +93,4 @@ TidyDF <- MSD_DF %>%
     group_by(subject, activity, feature) %>%
     summarize(mean = mean(val))
 
-write.csv(TidyDF,"Tidy.csv")
+write.table(TidyDF,"Tidy.txt",row.names=FALSE)
